@@ -1,0 +1,13 @@
+# Secrets
+.env
+
+# Dependencies
+node_modules/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+
+# System Files
+.DS_Store
