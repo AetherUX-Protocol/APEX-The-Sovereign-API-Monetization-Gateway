@@ -1,3 +1,6 @@
+<img width="1024" height="559" alt="APEX The Sovereign API Monetization Gateway" src="https://github.com/user-attachments/assets/d372c12f-e652-4877-a750-7959f8dd3471" />
+
+
 # APEX: Sovereign API Monetization Gateway 🚀
 
 **Built for the INITIATE: Initia Hackathon (April 2026)**
