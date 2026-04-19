@@ -1,6 +1,7 @@
 <img width="1024" height="559" alt="APEX The Sovereign API Monetization Gateway" src="https://github.com/user-attachments/assets/d372c12f-e652-4877-a750-7959f8dd3471" />
-
-
+Repo:https://github.com/AetherUX-Protocol/APEX-The-Sovereign-API-Monetization-Gateway/blob/main/contracts/settlement.move
+One Pager: https://docs.google.com/document/d/1x5zogFkzQzj7mTr3RUoq3stNvpPmETDBIReS10WNsdA/edit?usp=sharing
+Demo Video: https://youtu.be/u1NTKag__8s
 # APEX: Sovereign API Monetization Gateway 🚀
 
 **Built for the INITIATE: Initia Hackathon (April 2026)**
