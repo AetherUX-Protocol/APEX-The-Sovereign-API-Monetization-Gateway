@@ -1,1 +1,34 @@
-
+{
+  "project_name": "APEX",
+  "tagline": "Sovereign API Monetization Gateway for the Agentic Economy",
+  "description": "APEX is an Appchain on Initia that enables B2B API providers to monetize services with 100ms settlement finality using hardware-anchored trust and automated session-based payments.",
+  "track": "AI & Tooling",
+  "tech_stack": {
+    "vm": "Move VM",
+    "language": "Move",
+    "deployment": "Initia Appchain / Rollup"
+  },
+  "initia_native_features": [
+    {
+      "feature": "Auto-signing / Session UX",
+      "implementation_detail": "Used to allow AI agents to execute high-frequency API calls without manual wallet intervention within a defined spending window."
+    },
+    {
+      "feature": "Interwoven Bridge",
+      "implementation_detail": "Facilitates instant settlement of API fees by routing USDC/INIT liquidity from the Initia L1 to the APEX settlement layer."
+    },
+    {
+      "feature": "Initia Usernames (.init)",
+      "implementation_detail": "Used for human-readable identification of API providers and verified agentic consumers."
+    }
+  ],
+  "links": {
+    "repository": "YOUR_GITHUB_REPO_URL",
+    "demo_video": "YOUR_YOUTUBE_VIDEO_URL",
+    "one_pager": "YOUR_GOOGLE_DOC_URL"
+  },
+  "contact": {
+    "discord_handle": "YOUR_DISCORD",
+    "email": "YOUR_EMAIL"
+  }
+}
