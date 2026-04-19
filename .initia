@@ -1,0 +1,14 @@
+APEX-GATEWAY/
+├── .initia/
+│   └── submission.json         <-- CRITICAL: Mandatory for Initia hackathons
+├── contracts/                  <-- Smart contract logic (Move or CosmWasm)
+│   ├── src/
+│   └── Move.toml               <-- If using Move VM
+├── gateway-proxy/              <-- The "Decentralized RapidAPI" logic
+│   ├── src/
+│   └── config/
+├── docs/                       <-- Whitepaper, One-Pagers, and Diagrams
+│   └── architecture_v1.png
+├── .gitignore
+├── LICENSE (MIT or Apache 2.0)
+└── README.md                   <-- The "Face" of your project
