@@ -23,6 +23,26 @@ Current API marketplaces (like RapidAPI) take up to 20% in fees and hold revenue
 - `/contracts`: Move/CosmWasm smart contracts for atomic settlement.
 - `/gateway-proxy`: The lightweight routing layer that verifies API success.
 - `/.initia`: Hackathon submission metadata.
+- ## ⚙️ Installation & Setup
+
+To run the APEX Gateway locally, follow these steps:
+
+### 1. Clone the Repository
+```bash
+git clone <your-repo-url>
+cd APEX-GATEWAY
+2. Install Dependencies
+npm install
+3. Configure Environment Variables
+APEX requires specific network and security configurations to interact with the Initia blockchain.
+cp .env.example .env
+Open .env and fill in your Gateway Mnemonic and the Deployed Contract Address.
+
+Note: Never commit your .env file to version control. The .env.example serves as a template for all required keys.
+
+4. Start the Gateway
+npm start
+
 
 ## 🚀 Quick Start
 1. **Explore the Contracts:** Check `/contracts/src` for the settlement logic.
