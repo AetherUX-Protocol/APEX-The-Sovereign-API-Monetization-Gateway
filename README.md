@@ -25,38 +25,8 @@ Current API marketplaces (like RapidAPI) take up to 20% in fees and hold revenue
 - `/contracts`: Move/CosmWasm smart contracts for atomic settlement.
 - `/gateway-proxy`: The lightweight routing layer that verifies API success.
 - `/.initia`: Hackathon submission metadata.
-- ## 🏗 Technical Architecture
-
-APEX operates as a three-tier sovereign stack designed for ultra-low latency B2B commerce.
-
-### System Workflow
-1. **Request:** An AI Agent (Consumer) authorizes a session via **Initia Session Keys**.
-2. **Verification:** The request hits the **APEX Gateway Proxy**, which verifies the hardware-anchored trust signal and checks the on-chain Escrow balance.
-3. **Execution:** The B2B API is called. Upon a `200 OK` response, the Gateway triggers the settlement.
-4. **Settlement:** The **Move VM Contract** executes an atomic swap, moving funds from the Consumer Escrow to the Provider’s wallet in **100ms**.
-
-### Architecture Diagram
-```mermaid
-graph TD
-    subgraph "User Layer (Frontend)"
-        A[AI Agent / B2B Consumer] -->|Connects via InterwovenKit| B[Apex Dashboard]
-        B -->|Authorizes| C[Initia Session Keys]
-    end
-
-    subgraph "Infrastructure Layer (Gateway)"
-        C -->|Authenticated Request| D[APEX Gateway Proxy]
-        D -->|Validates Hardware Trust| E[B2B API Provider]
-    end
-
-    subgraph "Settlement Layer (Initia Appchain)"
-        E -->|200 OK Signal| F[Move VM: apex_settlement]
-        F -->|Atomic Payout| G[Provider Wallet]
-        H[Enshrined Liquidity Hub] --- F
-    end
-
-    D -.->|Interwoven Bridge| H
+- 
 - ## ⚙️ Installation & Setup
-
 To run the APEX Gateway locally, follow these steps:
 
 ### 1. Clone the Repository
