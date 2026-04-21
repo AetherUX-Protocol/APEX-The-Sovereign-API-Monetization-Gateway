@@ -19,6 +19,7 @@ Current API marketplaces (like RapidAPI) take up to 20% in fees and hold revenue
 - **Virtual Machine:** Move VM / CosmWasm
 - **Interoperability:** Interwoven Bridge (for cross-chain liquidity)
 - **Identity:** .init Usernames & Initia Session UX
+- Frontend Integration: Uses @initia/interwovenkit-react for seamless wallet connection and session-based auto-signing, enabling a frictionless UX for AI agent management.
 
 ## 📂 Repository Structure
 - `/contracts`: Move/CosmWasm smart contracts for atomic settlement.
