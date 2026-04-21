@@ -34,19 +34,22 @@ APEX operates as a three-tier sovereign stack designed for ultra-low latency B2B
 2. **Verification:** The **APEX Gateway Proxy** verifies the hardware trust signal.
 3. **Execution:** The B2B API is called; upon a `200 OK`, settlement is triggered.
 4. **Settlement:** The **Move VM Contract** executes an atomic swap in **100ms**.
+[ AI AGENT / CONSUMER ]
+          |
+          v
+[ APEX DASHBOARD (React + InterwovenKit) ] <---> [ INITIA SESSION KEYS ]
+          |
+          v
+[ APEX GATEWAY PROXY (Node.js) ] <-----------> [ B2B API PROVIDER ]
+          |                                          | (200 OK)
+          |                                          v
+[ INTERWOVEN BRIDGE ] <----------------------> [ MOVE VM CONTRACT ]
+          |                                     (Atomic Settlement)
+          v                                          |
+[ ENSHRINED LIQUIDITY ] <----------------------------+
+                                                     |
+                                            [ PROVIDER WALLET ]
 
-### Architecture Diagram
-
-```mermaid
-graph TD
-    A[AI Agent] --> B[Apex Dashboard]
-    B --> C[Initia Session Keys]
-    C --> D[APEX Gateway Proxy]
-    D --> E[B2B API Provider]
-    E --> F[Move VM Contract]
-    F --> G[Provider Wallet]
-    H[Liquidity Hub] --- F
-    D -.->|Bridge| H
 - - ## ⚙️ Installation & Setup
 To run the APEX Gateway locally, follow these steps:
 
